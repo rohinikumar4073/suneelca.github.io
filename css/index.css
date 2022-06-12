@@ -1,5 +1,5 @@
 body {
-    background: linear-gradient(rgba(255, 255, 255, 0), rgb(8, 8, 8)), url("./img5.jpg");
+    background: linear-gradient(rgba(255, 255, 255, 0), rgb(8, 8, 8)), url("/img/img5.jpg");
     background-size: cover;
     background-repeat: no-repeat;
     color: aliceblue;
@@ -175,7 +175,7 @@ header {
 
 @media (max-width: 500px) {
     body {
-        background: linear-gradient(rgba(255, 255, 255, 0), rgb(8, 8, 8)), url("./img7.jpg");
+        background: linear-gradient(rgba(255, 255, 255, 0), rgb(8, 8, 8)), url("./img/img7.jpg");
         background-size: cover;
         height: fit-content;
         background-repeat: no-repeat;
