@@ -1,0 +1,124 @@
+---
+title: GST
+register_gst:
+  - Get your company GST Registered in 5 days
+  - Filling GST Registration made easy
+  - Not complying to GST attracts heav
+  - GST Registration helps to inter state
+  - Companies that earn over prescribed limit should register GST
+gst_returns:
+  - File your GST Returns in timely manner
+  - Filling mandatory for all pepole with GST
+  - Avoid penality or Register cancellation
+  - Ease of avialing loans as you file regularly
+gst_appeals:
+  - Appeals against different orders of GST
+  - Excellent Legal Council
+  - Aggieved with an order file an appeal
+gst_refund:
+  - Our expert CA help in your GST refunds
+  - Claim the refund for the excess tax paid
+  - Get the refund your accumulated incom tax credit
+---
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable = no">
+    <title>GST</title>
+    <link rel="stylesheet" href="./all.css">
+    <script src="./jquery-3.6.0.min.js"> </script>
+    <script src="./index.js"> </script>
+    <script src="https://kit.fontawesome.com/8f02bbba9a.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <header> <a href="./index.html"> Elitetax </a><br></header>
+    <div class="mobile">+910000000000</div>
+    <div class="email">E-mail:Elitetax@gmail.com</div>
+    <div class="allmenus">
+        <div class="menu1"><a href="./gst.html"> GST </a></div>
+        <div class="menu2"><a href="./audit.html">Audit Service </a></div>
+        <div class="menu3"><a href="./incometax.html">Income Tax </a></div>
+        <div class="menu4"><a href="./pf&esi.html">PF & ESI</a></div>
+        <div class="menu5"><a href="./miscellaneous.html">Miscellaneous</a></div>
+        <div class="menu6"><a href="./book.html">Books Maintenance</a></div>
+        <div class="menu7"><a href="">About</a></div>
+
+    </div>
+    <div class="mobilelist">
+
+        <ul>
+            <li><a href="./gst.html"> GST </a></li>
+            <li><a href="./audit.html">Audit Service </a></li>
+            <li><a href="./incometax.html">IncomeTax </a></li>
+            <li><a href="./pf&esi.html">PF & ESI</a></li>
+            <li><a href="./miscellaneous.html">Miscellaneous</a></li>
+            <li><a href="./book.html">Books Maintenance</a></li>
+            <li><a href="">About</a></li>
+
+        </ul>
+
+
+    </div>
+
+    
+    <div class="menusym">
+        <b><i class="fa-solid fa-bars"></i></b>
+    </div>
+  
+    <div class="gstcontent">
+        <h4> GST Registration</h4>
+        {% for register_gst in page.register_gst %}
+			<i class="fa-regular fa-circle-check"></i> {{ register_gst }}<br><br>
+		{% endfor %}
+        <img src="./GSTRegistration-.jpg"width="420" height="200" >
+        <button>Register GST</button>
+    </div>
+
+
+
+    
+
+    <div class="gstreturn">
+        <hr>
+        <h3>GST Returns</h3>
+        {% for gst_returns in page.gst_returns %}
+			<i class="fa-regular fa-circle-check"></i> {{ gst_returns }}<br><br>
+		{% endfor %}
+        <button>File GST Returns</button>
+   
+
+
+        <img src="./gstreturn.jpg" width="380" height="170">
+
+    </div>
+    <div class="appeals">
+        <hr>
+        <h3>GST Appeals</h3>
+        {% for gst_appeals in page.gst_appeals %}
+			<i class="fa-regular fa-circle-check"></i> {{ gst_appeals }}<br><br>
+		{% endfor %}
+        <button>GST Appeals</button>
+
+    
+        <img src="./Appeal.jpg" width="380" height="170">
+    </div>
+    <div class="refund">
+        <hr>
+        <h3>GST Refund</h3>
+        {% for gst_refund in page.gst_refund		%}
+			<i class="fa-regular fa-circle-check"></i> {{ gst_refund }}<br><br>
+		{% endfor %}
+        <button>GST Refund</button>
+
+    
+        <img src="./gstrefund.jpg" width="380" height="170">
+    </div>
+
+
+</body>
+
+</html>

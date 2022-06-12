@@ -1,0 +1,824 @@
+body {
+    color: black;
+    font-family: Arial, Helvetica, sans-serif;
+    background: lightgrey;
+}
+
+html {
+    height: 100%;
+}
+
+header {
+    position: relative;
+    top: 3px;
+    font-size: 60px;
+    left: 20px;
+    right: 20px;
+
+}
+header a{
+text-decoration: none;
+color: black;      
+}
+header a:hover{
+    color: blue;
+    cursor: pointer;
+}
+
+.mobile {
+    position: absolute;
+    top: 5%;
+    left: 67%;
+}
+
+.email {
+    position: absolute;
+    top: 5%;
+    left: 80%;
+}
+
+.allmenus {
+    position: relative;
+    margin: 20px;
+    font-size: 22px;
+}
+
+.mobilelist {
+    display: none;
+}
+
+.menusym {
+    display: none;
+}
+
+.allmenus a {
+    text-decoration: none;
+    color: black;
+}
+
+.allmenus a:hover {
+    background:lightgreen;
+    color: blue;
+
+}
+
+.menu1 {
+    position: absolute;
+    top: 8%;
+    padding: 10px;
+    left: 9%;
+}
+
+.menu2 {
+    position: absolute;
+    top: 8%;
+    padding: 10px;
+    left: 16%;
+}
+
+.menu3 {
+    position: absolute;
+    top: 8%;
+    padding: 10px;
+    left: 29%;
+}
+
+.menu4 {
+    position: absolute;
+    top: 8%;
+    padding: 10px;
+    left: 40%;
+}
+
+.menu5 {
+    position: absolute;
+    top: 8%;
+    padding: 10px;
+    left: 49%;
+}
+
+.menu6 {
+    position: absolute;
+    top: 8%;
+    padding: 10px;
+    left: 63%;
+}
+
+.menu7 {
+    position: absolute;
+    top: 8%;
+    padding: 10px;
+    left: 82%;
+}
+ .gstcontent{
+     position: relative;
+     top: 50px;
+     left: 20px;
+     font-size: 20px;
+     cursor: pointer;
+
+ }
+ .gstcontent i{
+     color: green;
+     font-size: 30px;
+ }
+ .gstcontent img{
+     position: absolute;
+     left: 53%;
+     top: 3%;
+     border: 2px solid;
+     width: 500px;
+     height: 200px;
+ }
+ .gstcontent button{
+     position: absolute;
+     font-size: 20px;
+     top: 80%;
+     left: 66%;
+     color: white;
+     background: black;
+ }
+ .gstreturn{
+    position: relative;
+    top: 40px;
+    left: 20px;
+    font-size: 20px;
+
+
+    
+ }
+ .gstreturn i{
+     color: green;
+     font-size: 30px;
+ }
+ .gstreturn img{
+    position: absolute;
+    left: 53%;
+    top: 5%;
+    border: 2px solid;
+    width: 500px;
+    height: 200px;
+}
+.gstreturn button{
+    position: absolute;
+    font-size: 20px;
+    top: 79%;
+    left: 66%;
+    color: white;
+    background: black;
+}
+.appeals{
+    position: relative;
+    top: 20px;
+    left: 20px;
+    font-size: 23px;
+
+
+    
+ }
+ .appeals i{
+     color: green;
+     font-size: 30px;
+ }
+ .appeals img{
+    position: absolute;
+    left: 53%;
+    top: 7%;
+    border: 2px solid;
+    width: 500px;
+    height: 200px;
+}
+.appeals button{
+    position: absolute;
+    font-size: 20px;
+    top: 90%;
+    left: 68%;
+    color: white;
+    background: black;
+}
+.refund{
+    position: relative;
+    top: 20px;
+    left: 20px;
+    font-size: 23px;
+
+
+    
+ }
+ .refund i{
+     color: green;
+     font-size: 30px;
+ }
+ .refund img{
+    position: absolute;
+    left: 53%;
+    top: 7%;
+    border: 2px solid;
+    width: 500px;
+    height: 200px;
+}
+.refund button{
+    position: absolute;
+    font-size: 20px;
+    top: 90%;
+    left: 68%;
+    color: white;
+    background: black;
+}
+.Cost{
+    position: relative;
+    top: 50px;
+    left: 20px;
+    font-size: 23px;
+    cursor: pointer;
+
+}
+.Cost i{
+    color: green;
+    font-size: 30px;
+}
+.Cost img{
+    position: absolute;
+    left: 53%;
+    top: 5%;
+    border: 2px solid;
+    width: 500px;
+    height: 200px;
+}
+.Cost button{
+    position: absolute;
+    font-size: 20px;
+    top: 80%;
+    left: 66%;
+    color: white;
+    background: black;
+}
+.Internal{
+   position: relative;
+   top: 20px;
+   left: 20px;
+   font-size: 23px;
+
+
+   
+}
+.Internal i{
+    color: green;
+    font-size: 30px;
+}
+.Internal img{
+   position: absolute;
+   left: 53%;
+   top: 15%;
+   border: 2px solid;
+   width: 500px;
+   height: 200px;
+}
+.Internal button{
+   position: absolute;
+   font-size: 20px;
+   top: 79%;
+   left: 66%;
+   color: white;
+   background: black;
+}
+.Management{
+   position: relative;
+   top: 20px;
+   left: 20px;
+   font-size: 23px;
+
+
+   
+}
+.Management i{
+    color: green;
+    font-size: 30px;
+}
+.Management img{
+   position: absolute;
+   left: 53%;
+   top: 7%;
+   border: 2px solid;
+   width: 500px;
+   height: 200px;
+}
+.Management button{
+   position: absolute;
+   font-size: 20px;
+   top: 90%;
+   left: 68%;
+   color: white;
+   background: black;
+}
+/* PF & ESI*/
+.Insurance{
+    position: relative;
+    top: 70px;
+    left: 20px;
+    font-size: 23px;
+    cursor: pointer;
+
+}
+.Insurance i{
+    color: green;
+    font-size: 30px;
+}
+.Insurance img{
+    position: absolute;
+    left: 58%;
+    top: 17%;
+    border: 2px solid;
+    width: 500px;
+    height: 200px;
+}
+.Insurance button{
+    position: absolute;
+    font-size: 20px;
+    top: 100%;
+    left: 68%;
+    color: white;
+    background: black;
+}
+/* provident */
+.Provident{
+   position: relative;
+   top: 100px;
+   left: 20px;
+   font-size: 23px;
+
+
+   
+}
+.Provident i{
+    color: green;
+    font-size: 30px;
+}
+.Provident img{
+   position: absolute;
+   left: 57%;
+   top: 15%;
+   border: 2px solid;
+   width: 500px;
+   height: 200px;
+}
+.Provident button{
+   position: absolute;
+   font-size: 20px;
+   top: 90%;
+   left: 68%;
+   color: white;
+   background: black;
+}
+.incometax{
+    position: relative;
+    top:    110px;
+    left: 20px;
+    font-size: 23px;
+    cursor: pointer;
+
+}
+.incometax i{
+    color: green;
+    font-size: 30px;
+}
+.incometax img{
+    position: absolute;
+    left: 53%;
+    top: 10%;
+    border: 2px solid;
+    width: 550px;
+    height: 250px;
+}
+.incometax button{
+    position: absolute;
+    font-size: 20px;
+    top: 80%;
+    left: 68%;
+    color: white;
+    background: black;
+}
+
+
+
+@media (max-width: 500px) {
+    body {
+        
+        color: black;
+        font-family: Arial, Helvetica, sans-serif;
+        background: rgb(199, 196, 196);
+        cursor: pointer;
+        
+
+    }
+
+
+    header {
+        position: relative;
+        padding-left: 35%;
+        padding-right: 35%;
+        top: 8px;
+        font-size: 45px;
+        color: white;
+        cursor: pointer;
+    }
+    marquee{
+        cursor: pointer;
+    }
+
+    .mobile {
+        position: absolute;
+        top: 2%;
+        left: 50%;
+        font-size: 10px;
+        display: none;
+    }
+
+    .email {
+        position: absolute;
+        top: 2%;
+        left: 70%;
+        font-size: 10px;
+        display: none;
+    }
+
+    .allmenus {
+        display: none;
+    }
+
+    .mobilelist {
+        display: none;
+    }
+
+    .mobilelist li {
+        display: block;
+    }
+
+    .menusym {
+        display: block;
+    }
+
+    .menusym i {
+        position: absolute;
+        left: 5%;
+        font-size: 30px;
+        top: 4%;
+        color: blue;
+        cursor: pointer;
+    }
+    .menusym i:hover{
+        color: green;
+        background: white;
+    }
+
+    .mobilelist {
+        display: none;
+    }
+
+    .mobilelist ul {
+        display: hide;
+    }
+
+    .mobilelist ul li {
+        position: relative;
+        top: 2px;
+        right: 40px;
+        list-style-type: none;
+        background-color: rgb(208, 236, 206);
+        width: 145px;
+        height: 14px;
+        padding: 7px;
+        margin-left: 0px;
+        display: block;
+        cursor: pointer;
+
+
+    }
+
+    ul li {
+        font-display: block;
+    }
+
+    ul a {
+        text-decoration: none;
+        color: black;
+    }
+
+    ul li a:hover {
+        color:red;
+    }
+    .gstcontent{
+        position: relative;
+        top: 10px;
+        left: 20px;
+        font-size: 13px;
+        cursor: pointer;
+   
+    }
+    .gstcontent i{
+        color: green;
+        font-size: 20px;
+    }
+    .gstcontent img{
+        position: absolute;
+        left: 3%;
+        top: 110%;
+        border: 2px solid;
+        width: 320px;
+        height: 200px;
+        
+    }
+    .gstcontent button{
+        position: absolute;
+        font-size: 20px;
+        top: 220%;
+        left: 27%;
+        color: white;
+        background: black;
+    }
+    .gstreturn{
+       position: relative;
+       top: 290px;
+       left: 20px;
+       font-size: 13px;
+   
+   
+       
+    }
+    .gstreturn i{
+        color: green;
+        font-size: 20px;
+    }
+    .gstreturn img{
+        position: absolute;
+        left: 2%;
+        top: 98%;
+        border: 2px solid;
+        width: 320px;
+        height: 200px;
+ 
+   }
+   .gstreturn button{
+    position: absolute;
+    font-size: 20px;
+    top: 220%;
+    left: 27%;
+    color: white;
+    background: black;
+
+   }
+   .appeals{
+       position: relative;
+       top: 560px;
+       left: 20px;
+       font-size: 13px;
+       
+   
+   
+       
+    }
+    .appeals i{
+        color: green;
+        font-size: 20px;
+    }
+    .appeals img{
+        position: absolute;
+        left: 2%;
+        top: 98%;
+        border: 2px solid;
+        width: 320px;
+        height: 200px;
+ 
+
+   }
+   .appeals button{
+       position: absolute;
+       font-size: 20px;
+       top: 250%;
+       left: 27%;
+       color: white;
+       background: black;
+   }
+   .refund{
+       position: relative;
+       top: 830px;
+       left: 20px;
+       font-size: 13px;
+   
+   
+       
+    }
+    .refund i{
+        color: green;
+        font-size: 20px;
+    }
+    .refund img{
+       position: absolute;
+       left: 2%;
+       top: 98%;
+       border: 2px solid;
+       width: 320px;
+       height: 200px;
+   }
+   .refund button{
+       position: absolute;
+       font-size: 20px;
+       top: 240%;
+       left: 27%;
+       color: white;
+       background: black;
+       
+   }
+   hr{
+       width: 00px;
+       margin-right: 0px;
+       margin-left: 0px;
+       
+   }
+   .Cost{
+    position: relative;
+    top: 10px;
+    left: 20px;
+    font-size: 13px;
+    cursor: pointer;
+
+}
+.Cost i{
+    color: green;
+    font-size: 20px;
+}
+.Cost img{
+    position: absolute;
+    left: 3%;
+    top: 110%;
+    border: 2px solid;
+    width: 320px;
+    height: 200px;
+    
+}
+.Cost button{
+    position: absolute;
+    font-size: 20px;
+    top: 240%;
+    left: 27%;
+    color: white;
+    background: black;
+}
+.Internal{
+   position: relative;
+   top: 290px;
+   left: 20px;
+   font-size: 13px;
+
+
+   
+}
+.Internal i{
+    color: green;
+    font-size: 20px;
+}
+.Internal img{
+    position: absolute;
+    left: 3%;
+    top: 109%;
+    border: 2px solid;
+    width: 320px;
+    height: 200px;
+
+}
+.Internal button{
+position: absolute;
+font-size: 20px;
+top: 220%;
+left: 24%;
+color: white;
+background: black;
+
+}
+.Management{
+   position: relative;
+   top: 570px;
+   left: 20px;
+   font-size: 13px;
+   
+
+
+   
+}
+.Management i{
+    color: green;
+    font-size: 20px;
+}
+.Management img{
+    position: absolute;
+    left: 3%;
+    top: 109%;
+    border: 2px solid;
+    width: 320px;
+    height: 200px;
+    
+
+
+}
+
+.Management button{
+   position: absolute;
+   font-size: 20px;
+   top: 225%;
+   left: 22%;
+   color: white;
+   background: black;
+}
+.Insurance{
+    position: relative;
+    top: 10px;
+    left: 20px;
+    font-size: 13px;
+    cursor: pointer;
+
+}
+.Insurance i{
+    color: green;
+    font-size: 20px;
+}
+.Insurance img{
+    position: absolute;
+    left: 3%;
+    top: 100%;
+    border: 2px solid;
+    width: 320px;
+    height: 150px;
+    
+}
+.Insurance button{
+    position: absolute;
+    font-size: 20px;
+    top: 210%;
+    left: 14%;
+    color: white;
+    background: black;
+}
+
+.Provident{
+   position: relative;
+   top: 250px;
+   left: 20px;
+   font-size: 13px;
+  
+}
+.Provident i{
+    color: green;
+    font-size: 20px;
+}
+.Provident img{
+    position: absolute;
+    left: 3%;
+    top: 105%;
+    border: 2px solid;
+    width: 320px;
+    height: 150px;
+    
+}
+.Provident button{
+   position: absolute;
+   font-size: 20px;
+   top: 198%;
+   left: 20%;
+   color: white;
+   background: black;
+}
+.incometax{
+    position: relative;
+    top: 10px;
+    left: 20px;
+    font-size: 13px;
+    cursor: pointer;
+    
+
+}
+.incometax i{
+    color: green;
+    font-size: 20px;
+}
+.incometax img{
+    position: absolute;
+    left: 6%;
+    top: 105%;
+    border: 2px solid;
+    width: 320px;
+    height: 150px;
+    
+}
+.incometax button{
+    position: absolute;
+    font-size: 20px;
+    top: 175%;
+    left: 26%;
+    color: white;
+    background: black;
+}
+
+
+
+}
+

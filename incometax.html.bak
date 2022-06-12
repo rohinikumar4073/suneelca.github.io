@@ -1,0 +1,72 @@
+---
+title: Income Tax
+income_tax:
+  - Save the tax beyond 80C, Our experts tax consultants can help<br> you to reduce the tax.
+  - The government of india has given various provisions to reduce <br>the tax.<br>
+  - E Filing of your ITR (Income Tax Returns)
+  - Maximize your tax savings
+  - Income tax Saving investments
+---
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable = no">
+    <title>GST</title>
+    <link rel="stylesheet" href="./all.css">
+    <script src="./jquery-3.6.0.min.js"> </script>
+    <script src="./index.js"> </script>
+    <script src="https://kit.fontawesome.com/8f02bbba9a.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <header> <a href="./index.html"> Elitetax </a><br></header>
+    <div class="mobile">+910000000000</div>
+    <div class="email">E-mail:Elitetax@gmail.com</div>
+    <div class="allmenus">
+        <div class="menu1"><a href="./gst.html"> GST </a></div>
+        <div class="menu2"><a href="./audit.html">Audit Service </a></div>
+        <div class="menu3"><a href="./incometax.html">Income Tax </a></div>
+        <div class="menu4"><a href="./pf&esi.html">PF & ESI</a></div>
+        <div class="menu5"><a href="./miscellaneous.html">Miscellaneous</a></div>
+        <div class="menu6"><a href="./book.html">Books Maintenance</a></div>
+        <div class="menu7"><a href="">About</a></div>
+
+    </div>
+    <div class="mobilelist">
+
+        <ul>
+            <li><a href="./gst.html"> GST </a></li>
+            <li><a href="./audit.html">Audit Service </a></li>
+            <li><a href="./incometax.html">IncomeTax </a></li>
+            <li><a href="./pf&esi.html">PF & ESI</a></li>
+            <li><a href="./miscellaneous.html">Miscellaneous</a></li>
+            <li><a href="./book.html">Books Maintenance</a></li>
+            <li><a href="">About</a></li>
+
+        </ul>
+
+
+    </div>
+
+    
+    <div class="menusym">
+        <b><i class="fa-solid fa-bars"></i></b>
+    </div>
+  
+    <div class="incometax">
+        <h4> {{ page.title}}</h4>
+        {% for income_tax in page.income_tax %}
+			<i class="fa-regular fa-circle-check"></i> {{ income_tax }}<br><br>
+		{% endfor %}
+     
+        <img src="./tax.png"width="420" height="200" >
+        <button>Income Tax</button>
+    </div>
+
+
+</body>
+
+</html>

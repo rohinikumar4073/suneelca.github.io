@@ -1,0 +1,105 @@
+---
+title: Audit Service
+cost_audit:
+  - Report on all the different costs incurred.
+  - Identify any wastage
+  - Track the cash flow in your company
+  - Detecting any flaws in cost reports
+internal_audit:
+  - Secure compliance with the various laws<br>applicable to  an organization.
+  - Get objective assessment of your process and accounts
+  - Get your detailed audit report and <br>identity any discrepancies in your accounts
+  - Increase authenticity of the system
+management_audit:
+  - Evaluate the effectiveness of the management.
+  - Identify areas of improvement in the management
+  - Increase your profits by efficiently organizing <br>your resources
+  - Assess the effeciency of planning and process
+---
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable = no">
+    <title>{{ page.title}}</title>
+    <link rel="stylesheet" href="./all.css">
+    <script src="./jquery-3.6.0.min.js"> </script>
+    <script src="./index.js"> </script>
+    <script src="https://kit.fontawesome.com/8f02bbba9a.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <header> <a href="./index.html"> Elitetax </a><br></header>
+    <div class="mobile">+910000000000</div>
+    <div class="email">E-mail:Elitetax@gmail.com</div>
+    <div class="allmenus">
+        <div class="menu1"><a href="./gst.html"> GST </a></div>
+        <div class="menu2"><a href="./audit.html">Audit Service </a></div>
+        <div class="menu3"><a href="./incometax.html">Income Tax </a></div>
+        <div class="menu4"><a href="./pf&esi.html">PF & ESI</a></div>
+        <div class="menu5"><a href="./miscellaneous.html">Miscellaneous</a></div>
+        <div class="menu6"><a href="./book.html">Books Maintenance</a></div>
+        <div class="menu7"><a href="">About</a></div>
+
+    </div>
+    <div class="mobilelist">
+
+        <ul>
+            <li><a href="./gst.html"> GST </a></li>
+            <li><a href="./audit.html">Audit Service </a></li>
+            <li><a href="./incometax.html">IncomeTax </a></li>
+            <li><a href="./pf&esi.html">PF & ESI</a></li>
+            <li><a href="./miscellaneous.html">Miscellaneous</a></li>
+            <li><a href="./book.html">Books Maintenance</a></li>
+            <li><a href="">About</a></li>
+
+        </ul>
+
+
+    </div>
+
+    
+    <div class="menusym">
+        <b><i class="fa-solid fa-bars"></i></b>
+    </div>
+
+
+<div class="Cost">
+    <h4> Cost Audit  </h4>
+    
+    {% for costaudit in page.cost_audit %}
+        <i class="fa-regular fa-circle-check"></i> {{ costaudit }}<br><br>
+    {% endfor %}
+    <img src="./Cost-Audit.jpg" width="420" height="200">
+    <button>Cost Audit  </button>
+</div>
+
+<div class="Internal">
+    <hr>
+    <h3>Internal Audit</h3>
+    {% for internal_audit in page.internal_audit %}
+        <i class="fa-regular fa-circle-check"></i> {{ internal_audit }}<br><br>
+    {% endfor %}
+    <img src="./internalaudit.jpg" width="380" height="170">
+    <button>Internal Audit</button>
+
+    
+</div>
+
+<div class="Management">
+    <hr>
+    <h3>Management Audit</h3>
+    {% for management_audit in page.management_audit %}
+        <i class="fa-regular fa-circle-check"></i> {{ management_audit }}<br><br>
+    {% endfor %}
+    <img src="./manage.jfif" width="380" height="170">
+    <button>Management Audit</button>
+
+    
+
+
+</div>
+</body>
+</html>

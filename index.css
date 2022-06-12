@@ -1,0 +1,356 @@
+body {
+    background: linear-gradient(rgba(255, 255, 255, 0), rgb(8, 8, 8)), url("./img5.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: aliceblue;
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+
+html {
+    height: 100%;
+}
+
+header {
+    position: relative;
+    top: 3px;
+    font-size: 60px;
+
+}
+.scroll{
+    cursor: pointer;
+}
+.mobile {
+    position: absolute;
+    top: 2%;
+    left: 67%;
+}
+
+.email {
+    position: absolute;
+    top: 2%;
+    left: 80%;
+}
+
+.allmenus {
+    position: relative;
+    margin: 20px;
+    font-size: 22px;
+}
+
+.mobilelist {
+    display: none;
+}
+
+.menusym {
+    display: none;
+}
+
+.allmenus a {
+    text-decoration: none;
+    color: white;
+}
+
+.allmenus a:hover {
+    background: white;
+    color: blue;
+
+}
+
+.menu1 {
+    position: absolute;
+    top: 8%;
+    padding: 10px;
+    left: 9%;
+}
+
+.menu2 {
+    position: absolute;
+    top: 8%;
+    padding: 10px;
+    left: 16%;
+}
+
+.menu3 {
+    position: absolute;
+    top: 8%;
+    padding: 10px;
+    left: 29%;
+}
+
+.menu4 {
+    position: absolute;
+    top: 8%;
+    padding: 10px;
+    left: 40%;
+}
+
+.menu5 {
+    position: absolute;
+    top: 8%;
+    padding: 10px;
+    left: 49%;
+}
+
+.menu6 {
+    position: absolute;
+    top: 8%;
+    padding: 10px;
+    left: 63%;
+}
+
+.menu7 {
+    position: absolute;
+    top: 8%;
+    padding: 10px;
+    left: 82%;
+}
+
+.content1 {
+    display: none;
+}
+
+.content2 {
+    display: none;
+}
+
+.contactnow {
+    display: none;
+}
+.content3{
+    display: block;
+    position: absolute;
+    top: 40%;
+    left: 35%;
+    text-align: center;
+    color:pink;
+    font-size: 30px;
+    opacity: 0.6;
+    cursor: pointer;
+
+}
+.content4{
+    display: block;
+    position: absolute;
+    top: 55%;
+    left: 22%;
+    font-size: 35px;
+    font-style: italic;
+    cursor: pointer;
+}
+.content4 h5{
+    position: absolute;
+    font-size: 28px;
+    left: 10%;
+    color: blue;
+}
+
+.contactnow1{
+    display: block;
+    position: absolute;
+    top: 80%;
+    left: 40%;
+    border: 2px solid;
+    width: 150px;
+    padding: 15px;
+    text-align: center;
+    cursor: pointer;
+
+}
+.contactnow1:hover {
+    background: green;
+    display: block;
+}
+
+.contactnow1 i {
+    position: absolute;
+    left: 7%;
+    top: 30%;
+    font-size: 20px;
+    display: block;
+    cursor: pointer;
+
+}
+
+
+@media (max-width: 500px) {
+    body {
+        background: linear-gradient(rgba(255, 255, 255, 0), rgb(8, 8, 8)), url("./img7.jpg");
+        background-size: cover;
+        height: fit-content;
+        background-repeat: no-repeat;
+        color: whitesmoke;
+        font-family: Arial, Helvetica, sans-serif;
+
+
+
+    }
+
+
+    header {
+        position: relative;
+        padding-left: 35%;
+        padding-right: 35%;
+        top: 10px;
+        font-size: 45px;
+        color: white;
+        cursor: pointer;
+    }
+
+    .mobile {
+        position: absolute;
+        top: 2%;
+        left: 50%;
+        font-size: 10px;
+        display: none;
+    }
+
+    .email {
+        position: absolute;
+        top: 2%;
+        left: 70%;
+        font-size: 10px;
+        display: none;
+    }
+
+    .allmenus {
+        display: none;
+    }
+
+    .mobilelist {
+        display: none;
+    }
+
+    .mobilelist li {
+        display: block;
+    }
+
+    .menusym {
+        display: block;
+    }
+
+    .menusym i {
+        position: absolute;
+        left: 5%;
+        font-size: 30px;
+        top: 4%;
+        color: rgb(223, 213, 213);
+        cursor: pointer;
+    }
+    .menusym i:hover {
+        color: blue;
+
+    }
+
+    .mobilelist {
+        display: none;
+    }
+
+    .mobilelist ul {
+        display: hide;
+    }
+
+    .mobilelist ul li {
+        position: relative;
+        top: 2px;
+        right: 40px;
+        list-style-type: none;
+        background-color: rgb(208, 236, 206);
+        width: 145px;
+        height: 14px;
+        padding: 7px;
+        margin-left: 0px;
+        display: block;
+
+
+    }
+
+    ul li {
+        font-display: block;
+    }
+
+    ul a {
+        text-decoration: none;
+        color: black;
+    }
+
+    ul a:hover {
+        color: red;
+    }
+
+    .content1 {
+        position: absolute;
+        top: 20%;
+        left: 16%;
+        font-size: 30px;
+        text-align: center;
+        opacity: 0.6;
+        color: wheat;
+        cursor: pointer;
+        display: block;
+
+    }
+
+    .content2 {
+        position: absolute;
+        top: 35%;
+        left: 22%;
+        font-size: 35px;
+        text-align: center;
+        color: white;
+        text-align: center;
+        cursor: pointer;
+        display: block;
+
+    }
+
+    .content2 h5 {
+        position: absolute;
+        top: 90%;
+        left: 10%;
+        font-size: 19px;
+        opacity: 0.7;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        display: block;
+    }
+
+    .contactnow {
+        position: absolute;
+        top: 80%;
+        left: 28%;
+        border: 2px solid;
+        width: 150px;
+        padding: 15px;
+        text-align: center;
+        cursor: pointer;
+        display: block;
+    }
+
+    .contactnow:hover {
+        background: green;
+        display: block;
+    }
+
+    .contactnow i {
+        position: absolute;
+        left: 7%;
+        top: 30%;
+        font-size: 20px;
+        display: block;
+
+    }
+
+    .contactnow i:hover {
+        color: blue;
+    }
+    .content3{
+        display: none;
+
+    }
+    .content4{
+        display: none;
+    }
+    .contactnow1{
+        display: none;
+    }
+}
