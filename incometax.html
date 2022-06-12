@@ -22,40 +22,7 @@ income_tax:
 </head>
 
 <body>
-    <header> <a href="./index.html"> Elitetax </a><br></header>
-    <div class="mobile">+910000000000</div>
-    <div class="email">E-mail:Elitetax@gmail.com</div>
-    <div class="allmenus">
-        <div class="menu1"><a href="./gst.html"> GST </a></div>
-        <div class="menu2"><a href="./audit.html">Audit Service </a></div>
-        <div class="menu3"><a href="./incometax.html">Income Tax </a></div>
-        <div class="menu4"><a href="./pf&esi.html">PF & ESI</a></div>
-        <div class="menu5"><a href="./miscellaneous.html">Miscellaneous</a></div>
-        <div class="menu6"><a href="./book.html">Books Maintenance</a></div>
-        <div class="menu7"><a href="">About</a></div>
-
-    </div>
-    <div class="mobilelist">
-
-        <ul>
-            <li><a href="./gst.html"> GST </a></li>
-            <li><a href="./audit.html">Audit Service </a></li>
-            <li><a href="./incometax.html">IncomeTax </a></li>
-            <li><a href="./pf&esi.html">PF & ESI</a></li>
-            <li><a href="./miscellaneous.html">Miscellaneous</a></li>
-            <li><a href="./book.html">Books Maintenance</a></li>
-            <li><a href="">About</a></li>
-
-        </ul>
-
-
-    </div>
-
-    
-    <div class="menusym">
-        <b><i class="fa-solid fa-bars"></i></b>
-    </div>
-  
+    {% include header.html %}
     <div class="incometax">
         <h4> {{ page.title}}</h4>
         {% for income_tax in page.income_tax %}
