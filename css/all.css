@@ -8,109 +8,13 @@ html {
     height: 100%;
 }
 
-header {
-    position: relative;
-    top: 3px;
-    font-size: 60px;
-    left: 20px;
-    right: 20px;
-}
 
-header a {
-    text-decoration: none;
-    color: whitesmoke;
-}
 
 header a:hover {
     color: blue;
     cursor: pointer;
 }
 
-.mobile {
-    position: absolute;
-    top: 5%;
-    left: 67%;
-}
-
-.email {
-    position: absolute;
-    top: 5%;
-    left: 80%;
-}
-
-.allmenus {
-    position: relative;
-    margin: 20px;
-    font-size: 22px;
-}
-
-.mobilelist {
-    display: none;
-}
-
-.menusym {
-    display: none;
-}
-
-.allmenus a {
-    text-decoration: none;
-    color: white;
-}
-
-.allmenus a:hover {
-    background: rgb(14, 236, 14);
-    color: black;
-
-}
-
-.menu1 {
-    position: absolute;
-    top: 8%;
-    padding: 10px;
-    left: 9%;
-}
-
-.menu2 {
-    position: absolute;
-    top: 8%;
-    padding: 10px;
-    left: 16%;
-}
-
-.menu3 {
-    position: absolute;
-    top: 8%;
-    padding: 10px;
-    left: 29%;
-}
-
-.menu4 {
-    position: absolute;
-    top: 8%;
-    padding: 10px;
-    left: 40%;
-}
-
-.menu5 {
-    position: absolute;
-    top: 8%;
-    padding: 10px;
-    left: 49%;
-}
-
-.menu6 {
-    position: absolute;
-    top: 8%;
-    padding: 10px;
-    left: 63%;
-}
-
-.menu7 {
-    position: absolute;
-    top: 8%;
-    padding: 10px;
-    left: 82%;
-}
 
 .main {
     position: relative;
@@ -279,102 +183,8 @@ header a:hover {
     }
 
 
-    header {
-        position: relative;
-        padding-left: 17%;
-        font-size: 50px;
-        cursor: pointer;
-    }
-
-    header a {
-        color: rgb(212, 205, 205, 0.7);
-    }
-
     marquee {
         cursor: pointer;
-    }
-
-    .mobile {
-        position: absolute;
-        top: 2%;
-        left: 50%;
-        font-size: 10px;
-        display: none;
-    }
-
-    .email {
-        position: absolute;
-        top: 2%;
-        left: 70%;
-        font-size: 10px;
-        display: none;
-    }
-
-    .allmenus {
-        display: none;
-    }
-
-    .mobilelist {
-        display: none;
-    }
-
-    .mobilelist li {
-        display: block;
-    }
-
-    .menusym {
-        display: block;
-    }
-
-    .menusym i {
-        position: absolute;
-        background-size: cover;
-        left: 5%;
-        font-size: 30px;
-        top: 4%;
-        color: green;
-        cursor: pointer;
-    }
-
-    .menusym i:hover {
-        color: rgb(51, 13, 221);
-    }
-
-    .mobilelist {
-        display: none;
-    }
-
-    .mobilelist ul {
-        display: hide;
-    }
-
-    .mobilelist ul li {
-        position: relative;
-        top: 50px;
-        right: 40px;
-        list-style-type: none;
-        background-color: rgb(198, 221, 196);
-        width: 145px;
-        height: 14px;
-        padding: 7px;
-        margin-left: 0px;
-        display: block;
-        cursor: pointer;
-        border: outset;
-        border-radius: 10px;
-    }
-
-    ul li {
-        font-display: block;
-    }
-
-    ul a {
-        text-decoration: none;
-        color: black;
-    }
-
-    ul li a:hover {
-        color: fuchsia;
     }
 
     .main {

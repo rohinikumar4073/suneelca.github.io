@@ -1,14 +1,12 @@
-<header> 
-{% if page.title != "Home" %}
-	<a href="./index.html">
-{% endif %}
-Onetaxnation
-{% if page.title != "Home" %}
- </a> 
- {% endif %}
+
+<header>
+    <a href="./index.html">
+        1taxnation
+    </a> 
+     <div class="mobile">{{page.phoneno}}</div>
+    <div class="email">{{page.email}}</div>
 </header>
-    <div class="mobile">+91 90000 46136</div>
-    <div class="email">E-mail:Elitetax@gmail.com</div>
+   
     <div class="allmenus">
         <div class="menu1"><a href="./gst.html"> GST </a></div>
         <div class="menu2"><a href="./audit.html">Audit Service </a></div>
@@ -16,9 +14,12 @@ Onetaxnation
         <div class="menu4"><a href="./pf&esi.html">PF & ESI</a></div><br>
         <div class="menu5"><a href="./miscellaneous.html">Miscellaneous</a></div>
         <div class="menu6"><a href="./book.html">Books Maintenance</a></div>
-	<div class="menu7"><a href="">About</a></div>
-	
+        <div class="menu7"><a href="/blog.html">Blogs</a></div>
     </div>
+    <div class="menusym">
+        <i class="fa-solid fa-list-check"> </i>
+    </div>
+    
     <div class="mobilelist">
         <ul>
             <li><a href="./gst.html"> GST </a></li>
@@ -27,10 +28,6 @@ Onetaxnation
             <li><a href="./pf&esi.html">PF & ESI</a></li>
             <li><a href="./miscellaneous.html">Miscellaneous</a></li>
             <li><a href="./book.html">Books Maintenance</a></li>
-	    <li><a href="">About</a></li>
-	    
+            <li><a href="/blog.html">Blogs</a></li>
         </ul>
-    </div>
-	<div class="menusym">
-        <b><i class="fa-solid fa-bars"></i></b>
     </div>

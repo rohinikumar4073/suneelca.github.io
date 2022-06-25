@@ -15,54 +15,35 @@ heading:
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable = no">
         <title>{{page.title}}</title>
+        <link rel="stylesheet" href="/css/common.css">
         <link rel="stylesheet" href="/css/index.css">
         <script src="/js/jquery-3.6.0.min.js"> </script>
         <script src="/js/index.js"> </script>
         <script src="https://kit.fontawesome.com/8f02bbba9a.js" crossorigin="anonymous"></script>
     </head>
     <body>
-    <header>{{page.title}}</header>
-    <div class="mobile">{{page.phoneno}}</div>
-    <div class="email">{{page.email}}</div>
-    <div class="allmenus">
-        <div class="menu1"><a href="./gst.html"> GST </a></div>
-        <div class="menu2"><a href="./audit.html">Audit Service </a></div>
-        <div class="menu3"><a href="./incometax.html">Income Tax </a></div>
-        <div class="menu4"><a href="./pf&esi.html">PF & ESI</a></div><br>
-        <div class="menu5"><a href="./miscellaneous.html">Miscellaneous</a></div>
-        <div class="menu6"><a href="./book.html">Books Maintenance</a></div>
-        <div class="menu7"><a href="">About</a></div>
-    </div>
-    <marquee behavior="scroll" direction="left" onmouseover="this.stop();" onmouseout="this.start();">{{page.scrolling}}</marquee>
+
+    {% include header.html %}
+
+    <marquee behavior="scroll" direction="left" onmouseover="this.stop();" onmouseout="this.start();">
+        {{page.scrolling}}
+    </marquee>
     
-    <div class="mobilelist">
-        <ul>
-            <li><a href="./gst.html"> GST </a></li>
-            <li><a href="./audit.html">Audit Service </a></li>
-            <li><a href="./incometax.html">IncomeTax </a></li>
-            <li><a href="./pf&esi.html">PF & ESI</a></li>
-            <li><a href="./miscellaneous.html">Miscellaneous</a></li>
-            <li><a href="./book.html">Books Maintenance</a></li>
-            <li><a href="">About</a></li>
-        </ul>
-    </div>
+
     <div class="content3">
         {{page.heading[0]}}
     </div>
+
     <div class="content4">
         {{page.heading[1] }}
         <h5>
         {{ page.heading[2] }}
         </h5>
     </div>
+
     <div class="contactnow1">
         <i class="fa-solid fa-phone-flip"></i>Contact Now
     </div>
-    
-    <div class="menusym">
-        <i class="fa-solid fa-list-check"> </i>
-    </div>
-    
     
     <div class="content1">
         {{page.heading[0]}}

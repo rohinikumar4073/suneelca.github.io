@@ -1,21 +1,32 @@
----
-layout: default
----
-  <head>
+<!doctype html>
+<html lang="en">
+ 
+   <head>
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable = no">
         <title>{{page.title}}</title>
         <link rel="stylesheet" href="/css/common.css">
-        <link rel="stylesheet" href="/css/index.css">
+        <link rel="stylesheet" href="/css/all.css">
         <script src="/js/jquery-3.6.0.min.js"> </script>
         <script src="/js/index.js"> </script>
         <script src="https://kit.fontawesome.com/8f02bbba9a.js" crossorigin="anonymous"></script>
+        <style type="text/css">
+        .container {
+          padding: 10px 10%;
+        }
+        </style>
     </head>
     <body>
 
     {% include header.html %}
-<h1>{{ page.title }}</h1>
-<p>{{ page.date | date_to_string }} - {{ page.author }}</p>
-
-{{ content }}
+  </head>
+  <body>
+   <div class="container">
+    <h1>{{ page.title }}</h1>
+    <section>
+      {{ content }}
+    </section>
+    </div>
+  </body>
+</html>
