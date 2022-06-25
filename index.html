@@ -1,65 +1,79 @@
 ---
-title: Home
-scrolling: Income tax Returns now enabled to file for AY 2022-23 | Last Date for Filing of Incometax Returns for Non audited cases is 31st July | Last Date for Filing of PF & ESI Returns for the month of May 2022 is 15th June 
+title: 1taxnation
+phoneno: +91 90000 46136
+email: 1taxnation@gmail.com
+scrolling: Income tax Returns now enabled to file for AY 2022-23 | Last Date for Filing of Incometax Returns for Non audited cases is 31st July | Last Date for Filing of PF & ESI Returns for the month of May 2022 is 15th June
+heading:
+- You Focus on your Business <br> We Focus on your compliance
+- Committed To Serving Our Clients Succeed
+- Our Mission is your timely Compliances
 ---
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable = no">
-    <title>Elitetax</title>
-    <link rel="stylesheet" href="./css/index.css">
-    <script src="./js/jquery-3.6.0.min.js"> </script>
-    <script src="./js/index.js"> </script>
-    <script src="https://kit.fontawesome.com/8f02bbba9a.js" crossorigin="anonymous"></script>
-</head>
-
-<body>
-    {% include header.html %}
-	<marquee behavior="scroll" direction="left" onmouseover="this.stop();" onmouseout="this.start();">
-       {{ page.scrolling }}
-    </marquee>
-      <div class="content3">
-        You Focus on your Business <br> We Focus on your compliance
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable = no">
+        <title>{{page.title}}</title>
+        <link rel="stylesheet" href="/css/index.css">
+        <script src="/js/jquery-3.6.0.min.js"> </script>
+        <script src="/js/index.js"> </script>
+        <script src="https://kit.fontawesome.com/8f02bbba9a.js" crossorigin="anonymous"></script>
+    </head>
+    <body>
+    <header>{{page.title}}</header>
+    <div class="mobile">{{page.phoneno}}</div>
+    <div class="email">{{page.email}}</div>
+    <div class="allmenus">
+        <div class="menu1"><a href="./gst.html"> GST </a></div>
+        <div class="menu2"><a href="./audit.html">Audit Service </a></div>
+        <div class="menu3"><a href="./incometax.html">Income Tax </a></div>
+        <div class="menu4"><a href="./pf&esi.html">PF & ESI</a></div><br>
+        <div class="menu5"><a href="./miscellaneous.html">Miscellaneous</a></div>
+        <div class="menu6"><a href="./book.html">Books Maintenance</a></div>
+        <div class="menu7"><a href="">About</a></div>
+    </div>
+    <marquee behavior="scroll" direction="left" onmouseover="this.stop();" onmouseout="this.start();">{{page.scrolling}}</marquee>
+    
+    <div class="mobilelist">
+        <ul>
+            <li><a href="./gst.html"> GST </a></li>
+            <li><a href="./audit.html">Audit Service </a></li>
+            <li><a href="./incometax.html">IncomeTax </a></li>
+            <li><a href="./pf&esi.html">PF & ESI</a></li>
+            <li><a href="./miscellaneous.html">Miscellaneous</a></li>
+            <li><a href="./book.html">Books Maintenance</a></li>
+            <li><a href="">About</a></li>
+        </ul>
+    </div>
+    <div class="content3">
+        {{page.heading[0]}}
     </div>
     <div class="content4">
-        Committed To
-        Serving Our
-        Clients
-        Succeed
-
-        <h5>Our Mission is Your
-            timely Compliances
+        {{page.heading[1] }}
+        <h5>
+        {{ page.heading[2] }}
         </h5>
     </div>
     <div class="contactnow1">
         <i class="fa-solid fa-phone-flip"></i>Contact Now
     </div>
-
-
+    
+    <div class="menusym">
+        <i class="fa-solid fa-list-check"> </i>
+    </div>
+    
     
     <div class="content1">
-        Your accounting starts <br> Here
+        {{page.heading[0]}}
     </div>
     <div class="content2">
-        Committed To<BR>
-        Helping Our<br>
-        Clients<br>
-        Succeed<br>
-
-        <h5>Our Mission is Your<br>
-            timely accounting
-        </h5>
+        {{ page.heading[1] }}
+        <h5>{{ page.heading[2] }}</h5>
     </div>
     <div class="contactnow">
         <i class="fa-solid fa-phone-flip"></i>Contact Now
     </div>
-
-    </div>
-	    {% include footer.html %}
-
+</div>
 </body>
-
 </html>
