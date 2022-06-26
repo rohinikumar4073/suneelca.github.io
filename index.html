@@ -1,60 +1,29 @@
 ---
+layout: default
 title: 1taxnation
 phoneno: +91 90000 46136
 email: 1taxnation@gmail.com
+title: 1taxnation
 scrolling: Income tax Returns now enabled to file for AY 2022-23 | Last Date for Filing of Incometax Returns for Non audited cases is 31st July | Last Date for Filing of PF & ESI Returns for the month of May 2022 is 15th June
 heading:
 - You Focus on your Business <br> We Focus on your compliance
 - Committed To Serving Our Clients Succeed
 - Our Mission is your timely Compliances
 ---
-<!DOCTYPE html>
-<html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable = no">
-        <title>{{page.title}}</title>
-        <link rel="stylesheet" href="/css/common.css">
-        <link rel="stylesheet" href="/css/index.css">
-        <script src="/js/jquery-3.6.0.min.js"> </script>
-        <script src="/js/index.js"> </script>
-        <script src="https://kit.fontawesome.com/8f02bbba9a.js" crossorigin="anonymous"></script>
-    </head>
-    <body>
-
-    {% include header.html %}
-
-    <marquee behavior="scroll" direction="left" onmouseover="this.stop();" onmouseout="this.start();">
-        {{page.scrolling}}
-    </marquee>
-    
-
-    <div class="content3">
-        {{page.heading[0]}}
-    </div>
-
-    <div class="content4">
-        {{page.heading[1] }}
-        <h5>
-        {{ page.heading[2] }}
-        </h5>
-    </div>
-
-    <div class="contactnow1">
-        <i class="fa-solid fa-phone-flip"></i>Contact Now
-    </div>
-    
+<marquee behavior="scroll" direction="left" onmouseover="this.stop();" onmouseout="this.start();">
+{{page.scrolling}}
+</marquee>
+<div class='content-container'>
     <div class="content1">
         {{page.heading[0]}}
     </div>
     <div class="content2">
         {{ page.heading[1] }}
-        <h5>{{ page.heading[2] }}</h5>
+    </div>
+    <div class="content3">
+        {{ page.heading[2] }}
     </div>
     <div class="contactnow">
-        <i class="fa-solid fa-phone-flip"></i>Contact Now
+        <i class="fa-solid fa-phone-flip"></i><a class='contact-now' target='_blank'href='https://docs.google.com/forms/d/e/1FAIpQLSePrqOYnMYciNB32qwS69UGciNmW-8pRzd-hvkc9qBIOKB5jA/viewform?usp=sf_link' >Contact Now</a>
     </div>
 </div>
-</body>
-</html>

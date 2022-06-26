@@ -4,13 +4,14 @@ header {
     align-items: center;
 }
 
+p {
+    margin: 0px;
+}
 header a {
     text-decoration: none;
     color: whitesmoke;
     font-size: 40px;
 }
-
-
 
 .allmenus {
     position: relative;
@@ -18,19 +19,15 @@ header a {
     font-size: 22px;
 }
 
-
 .mobilelist {
     display: none;
     position: absolute;
     z-index: 1;
 }
 
-
-
 .menusym {
     display: none;
 }
-
 
 .menu1 {
     position: absolute;
@@ -81,7 +78,6 @@ header a {
     left: 82%;
 }
 
-
 .allmenus a {
     text-decoration: none;
     color: white;
@@ -92,22 +88,19 @@ header a {
     color: blue;
 }
 
-@media (max-width: 500px) {
 
+@media (max-width:500px) {
     header {
-        position: relative;
-        padding-left: 30%;
-        padding-right: 35%;
-        top: 10px;
-        font-size: 45px;
-        color: white;
-        cursor: pointer;
+        display: grid;
+        grid-template-columns: 30px auto;
+        align-items: center;
     }
-
 
     header a {
         color: rgb(212, 205, 205, 0.7);
+        text-align: center;
     }
+
     .mobile {
         position: absolute;
         top: 2%;
@@ -123,7 +116,6 @@ header a {
         font-size: 10px;
         display: none;
     }
-
 
     .allmenus {
         display: none;
@@ -142,8 +134,6 @@ header a {
     }
 
     .menusym i {
-        position: absolute;
-        background-size: cover;
         left: 5%;
         font-size: 30px;
         top: 4%;
@@ -165,7 +155,7 @@ header a {
 
     .mobilelist ul li {
         position: relative;
-        top: 50px;
+        top: -7px;
         right: 40px;
         list-style-type: none;
         background-color: rgb(198, 221, 196);
@@ -192,5 +182,20 @@ header a {
         color: fuchsia;
     }
 
-
 }
+
+.box {
+    height: 100%;
+}
+footer{
+    background: #999;
+    padding: 10px;
+}
+a.contact-now {
+    text-decoration: none;
+    color: whitesmoke;
+}
+.container {
+    padding: 10px 10%;
+
+  }

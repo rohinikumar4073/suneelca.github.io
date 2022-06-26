@@ -1,106 +1,39 @@
-body {
-    background: linear-gradient(rgb(8, 8, 8), rgb(14, 13, 13,0.7)), url("/img/img3.jpg");
+.home {
+    background: linear-gradient(rgb(8, 8, 8), rgb(14, 13, 13, 0.7)), url("/img/img3.jpg");
     background-size: cover;
     background-repeat: no-repeat;
     color: whitesmoke;
+    padding: 10px;
+}
+body{
     font-family: Arial, Helvetica, sans-serif;
 }
-
-
-
 html {
     height: 100%;
 }
 
-
-.scroll{
+.scroll {
     cursor: pointer;
 }
 
-
-
-
-.content1 {
-    display: none;
-}
-
-.content2 {
-    display: none;
-}
-
-.contactnow {
-    display: none;
-}
-.content3{
-    display: block;
-    position: absolute;
-    top: 40%;
-    left: 35%;
-    text-align: center;
-    color:pink;
-    font-size: 30px;
-    opacity: 0.6;
-    cursor: pointer;
-
-}
-.content4{
-    display: block;
-    position: absolute;
-    top: 55%;
-    left: 22%;
-    font-size: 35px;
-    font-style: italic;
-    cursor: pointer;
-}
-.content4 h5{
-    position: absolute;
-    font-size: 28px;
-    left: 10%;
-    color:whitesmoke;
-}
-
-.contactnow1{
-    display: block;
-    position: absolute;
-    top: 80%;
-    left: 40%;
-    border: 2px solid;
-    width: 150px;
-    padding: 15px;
-    text-align: center;
-    cursor: pointer;
-
-}
-.contactnow1:hover {
-    background: green;
-    display: block;
-}
-
-.contactnow1 i {
-    position: absolute;
-    left: 7%;
-    top: 30%;
-    font-size: 20px;
-    display: block;
-    cursor: pointer;
-
-}
-marquee{
+marquee {
     background: rgba(204, 204, 30, 0.8);
     color: black;
     padding: 10px;
 }
-.maindiv{
+
+.maindiv {
     position: absolute;
     top: 420px;
 }
-.maindiv{
+
+.maindiv {
     position: relative;
     width: 700px;
     height: 250px;
-    
 }
-.card{
+
+.card {
     position: relative;
     width: 100%;
     height: 100%;
@@ -108,10 +41,12 @@ marquee{
     transition: all 0.5s ease;
     border-radius: 10%;
 }
-.card:hover{
+
+.card:hover {
     transform: rotateY(180deg);
 }
-.front{
+
+.front {
     position: absolute;
     width: 100%;
     height: 100%;
@@ -120,13 +55,15 @@ marquee{
     color: #333;
     border-radius: 9%;
 }
-.front img{
+
+.front img {
     top: 0%;
     width: 250px;
     height: 200px;
     border-radius: 10%;
 }
-.back{
+
+.back {
     text-align: center;
     position: absolute;
     width: 100%;
@@ -138,8 +75,84 @@ marquee{
     border-radius: 10%;
 }
 
-@media (max-width: 500px) {
-    body {
+.content1 {
+    position: relative;
+    max-width: 80%;
+    font-size: 30px;
+    text-align: center;
+    opacity: 0.6;
+    color: wheat;
+    cursor: pointer;
+    display: block;
+}
+
+.content2 {
+    position: relative;
+    max-width: 70%;
+    font-size: 216%;
+    text-align: center;
+    color: rgb(14, 240, 89);
+    text-align: center;
+    cursor: pointer;
+    display: block;
+    font-style: normal;
+}
+
+.content3 {
+    position: relative;
+    font-size: 24px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    display: block;
+    color: rgb(234, 236, 230);
+    opacity: 0.7;
+    font-weight: bold;
+    text-align: center;
+}
+
+.contactnow {
+    position: relative;
+    border: 2px solid;
+    width: 150px;
+    padding: 15px;
+    text-align: center;
+    cursor: pointer;
+    display: block;
+    border-style: outset;
+    border-color: aqua;
+    border-bottom-style: solid;
+}
+
+.contactnow:hover {
+    background: green;
+    display: block;
+}
+
+.contactnow i {
+    position: absolute;
+    left: 7%;
+    top: 30%;
+    font-size: 20px;
+    display: block;
+}
+
+.content-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    height: 700px;
+    padding: 20px 10px;
+}
+.footer-box{
+    display: flex;
+    
+}
+
+@media (max-width:500px) {
+    .content-container{
+        height: 600px;
+    }
+    body.home {
         background: linear-gradient(rgba(8, 8, 8, 0.7), rgb(8, 8, 8)), url("/img/img7.jpg");
         background-size: cover;
         height: fit-content;
@@ -148,8 +161,6 @@ marquee{
         font-family: Arial, Helvetica, sans-serif;
     }
 
-
-    
     marquee {
         position: relative;
         margin-top: 3%;
@@ -157,80 +168,4 @@ marquee{
         color: black;
     }
 
-   
-    .content1 {
-        position: relative;
-        max-width: 80%;
-        margin-top: 2%;
-        margin-left: 8%;
-        font-size: 30px;
-        text-align: center;
-        opacity: 0.6;
-        color: wheat;
-        cursor: pointer;
-        display: block;
-
-    }
-
-    .content2 {
-        position: relative;
-        max-width: 70%;
-        margin-top: 10%;
-        left: 13%;
-        font-size: 216%;
-        text-align: center;
-        color: rgb(14, 240, 89);
-        text-align: center;
-        cursor: pointer;
-        display: block;
-        font-style: normal;
-    }
-
-    .content2 h5 {
-        position: relative;
-        left: 1%;
-        font-size: 16px;
-        opacity: 0.9;
-        font-family: Verdana, Geneva, Tahoma, sans-serif;
-        display: block;
-        color: rgb(234, 236, 230);
-        opacity: 0.7;
-    }
-
-    .contactnow {
-        position: relative;
-        margin-top: 20%;
-        left: 25%;
-        border: 2px solid;
-        width: 150px;
-        padding: 15px;
-        text-align: center;
-        cursor: pointer;
-        display: block;
-        border-style: outset;
-        border-color: aqua;
-        border-bottom-style: solid;
-    }
-    .contactnow:hover {
-        background: green;
-        display: block;
-    }
-    .contactnow i {
-        position: absolute;
-        left: 7%;
-        top: 30%;
-        font-size: 20px;
-        display: block;
-
-    }
-    .content3{
-        display: none;
-
-    }
-    .content4{
-        display: none;
-    }
-    .contactnow1{
-        display: none;
-    }
 }

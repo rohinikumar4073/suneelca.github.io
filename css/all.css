@@ -168,18 +168,7 @@ header a:hover {
 
 @media (max-width: 500px) {
     body {
-        color: whitesmoke;
-        font-family: Arial, Helvetica, sans-serif;
-        background: rgb(41, 40, 40);
-        cursor: pointer;
-        background-size: cover;
-        height: fit-content;
-        border: outset;
-        height: 10%;
-        border-radius: 5%;
-        background-size: cover;
-        border-color: chartreuse;
-        border-style: inset;
+      
     }
 
 
