@@ -9,5 +9,6 @@
 	1. Use the download button in [GitHub](https://github.com/rohinikumar4073/suneelca.github.io)
 3. Unzip the downloaded folder
 4. Open the folder in command prompt
-5. Run  `bundle exec jekyll serve`
-6. Observe code running in localhost:4000
+5. Run `bundle install`
+6. Run  `bundle exec jekyll serve`
+7. Observe code running in localhost:4000
