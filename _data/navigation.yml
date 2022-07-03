@@ -1,0 +1,35 @@
+- nav: gst
+  link: gst.html
+  title: GST
+  submenu:
+    - nav: gstRegistration
+      link: gst.html
+      title: GST Registration
+
+    - nav: gstRefunds
+      link: gstrefunds.html
+      title: GST Refunds
+
+- nav: auditService
+  link: audit.html
+  title: Audit Service
+
+- nav: incomeTax
+  link: incometax.html
+  title: Income Tax
+
+- nav: pf_esi
+  link: pf_esi.html
+  title: PF & ESI
+
+- nav: booksMaintenance
+  link: book.html
+  title: Books Maintenance
+
+- nav: miscellaneous
+  link: miscellaneous.html
+  title: Miscellaneous
+
+- nav: blogs
+  link: blog.html
+  title: Blogs
