@@ -147,7 +147,7 @@ a.contact-now {
     .content-container{
         height: 600px;
     }
-    body.home {
+    .home {
         background: linear-gradient(rgba(8, 8, 8, 0.7), rgb(8, 8, 8)), url("/img/img7.jpg");
         background-size: cover;
         height: fit-content;
