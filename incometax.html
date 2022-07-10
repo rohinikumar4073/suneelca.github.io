@@ -2,21 +2,24 @@
 layout: inner
 title: Income Tax
 income_tax:
-  - Save the tax beyond 80C, Our experts tax consultants can help<br> you to reduce the tax.
-  - The government of india has given various provisions to reduce <br>the tax.
-  - E Filing of your ITR (Income Tax Returns)
-  - Maximize your tax savings
-  - Income tax Saving investments
-  - Get huge savings
+- Save the tax beyond 80C, Our experts tax consultants can help<br> you to reduce the tax.
+- The government of india has given various provisions to reduce <br>the tax.
+- E Filing of your ITR (Income Tax Returns)
+- Maximize your tax savings
+- Income tax Saving investments
+- Get huge savings
 ---
-
-    <div class="incometax">
-        <h4> {{ page.title}}</h4>
-        {% for income_tax in page.income_tax %}
-			<i class="fa-regular fa-circle-check"></i> {{ income_tax }}<br><br>
-		{% endfor %}
-     
-        <img src="./img/tax.png"width="420" height="200" >
-        <button>Income Tax</button>
+<div class="incometax">
+    <h2> {{ page.title}}</h2>
+    <div class="section">
+        <div class="details">
+            {% for income_tax in page.income_tax %}
+                <div class="details-item">
+                    <i class="fa-regular fa-circle-check"></i>
+                    <span>{{ income_tax }}</span>
+                </div>
+            {% endfor %}
+        </div>
+        <img src="./img/tax.png" >
     </div>
-
+</div>

@@ -2,52 +2,61 @@
 layout: inner
 title: Audit Service
 cost_audit:
-  - Report on all the different costs incurred.
-  - Identify any wastage
-  - Track the cash flow in your company
-  - Detecting any flaws in cost reports
+- Report on all the different costs incurred.
+- Identify any wastage
+- Track the cash flow in your company
+- Detecting any flaws in cost reports
 internal_audit:
-  - Secure compliance with the various laws<br>applicable to  an organization.
-  - Get objective assessment of your process and accounts
-  - Get your detailed audit report and <br>identity any discrepancies in your accounts
-  - Increase authenticity of the system
+- Secure compliance with the various laws<br>applicable to  an organization.
+- Get objective assessment of your process and accounts
+- Get your detailed audit report and <br>identity any discrepancies in your accounts
+- Increase authenticity of the system
 management_audit:
-  - Evaluate the effectiveness of the management.
-  - Identify areas of improvement in the management
-  - Increase your profits by efficiently organizing <br>your resources
-  - Assess the effeciency of planning and process
+- Evaluate the effectiveness of the management.
+- Identify areas of improvement in the management
+- Increase your profits by efficiently organizing <br>your resources
+- Assess the effeciency of planning and process
 ---
-
-
+<h2> Audit Service</h2>
 <div class="Cost">
-    <h4> Cost Audit  </h4>
-    
-    {% for costaudit in page.cost_audit %}
-        <i class="fa-regular fa-circle-check"></i> {{ costaudit }}<br><br>
-    {% endfor %}
-    <img src="./img/Cost-Audit.jpg" width="420" height="200">
-    <button>Cost Audit  </button>
+    <h3> Cost Audit  </h3>
+    <div class="section">
+        <div class="details">
+            {% for costaudit in page.cost_audit %}
+                <div class='details-item'>
+                    <i class="fa-regular fa-circle-check"></i>
+                    <span>{{ costaudit }}</span>
+                </div>
+            {% endfor %}
+        </div>
+        <img src="./img/Cost-Audit.jpg"  >
+    </div>
 </div>
-
 <div class="Internal">
     <hr>
     <h3>Internal Audit</h3>
-    {% for internal_audit in page.internal_audit %}
-        <i class="fa-regular fa-circle-check"></i> {{ internal_audit }}<br><br>
-    {% endfor %}
-    <img src="./img/internalaudit.jpg" width="380" height="170">
-    <button>Internal Audit</button>
-
-    
+    <div class="section">
+        <div class="details">
+            {% for internal_audit in page.internal_audit %}
+                <div class='details-item'>
+                    <i class="fa-regular fa-circle-check"></i> <span> {{ internal_audit }}</span>
+                </div>
+            {% endfor %}
+        </div>
+        <img src="./img/internalaudit.jpg" >
+    </div>
 </div>
-
 <div class="Management">
     <hr>
     <h3>Management Audit</h3>
-    {% for management_audit in page.management_audit %}
-        <i class="fa-regular fa-circle-check"></i> {{ management_audit }}<br><br>
-    {% endfor %}
-    <img src="./img/manage.jfif" width="380" height="170">
-    <button>Management Audit</button>
-
+    <div class="section">
+        <div class="details">
+            {% for management_audit in page.management_audit %}
+                <div class='details-item'>
+                    <i class="fa-regular fa-circle-check"></i> <span>{{ management_audit }}</span>
+                </div>
+            {% endfor %}
+        </div>
+        <img src="./img/manage.jfif"  >
     </div>
+</div>

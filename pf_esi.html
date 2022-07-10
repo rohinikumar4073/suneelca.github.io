@@ -2,38 +2,42 @@
 layout: inner
 title: PF and ESI
 esi:
-  - Mandatory for company with employees more than 10 members.
-  - Our experts helps you to get registered quickly.
-  - Provide health coverage for your employees and their dependents
+- Mandatory for company with employees more than 10 members.
+- Our experts helps you to get registered quickly.
+- Provide health coverage for your employees and their dependents
 epf:
-  - Employees with more than 20 people can apply for it
-  - A hazzle free experience with the help of our experts
-  - Employers and Employees need to contribute minimum 12 percent <br>each for the provident fund
+- Employees with more than 20 people can apply for it
+- A hazzle free experience with the help of our experts
+- Employers and Employees need to contribute minimum 12 percent <br>each for the provident fund
 ---
-<!DOCTYPE html>
-<html lang="en">
-
-    <div class="Insurance">
-        <hr>
-        <h3>Employee State Insurance</h3>
-        {% for esi in page.esi %}
-			<i class="fa-regular fa-circle-check"></i> {{ esi }}<br><br>
-		{% endfor %}     
-		<img src="./img/Employees.jpg" width="380" height="170">
-        <button>Employee State Insurance</button>
-    
+<div class="Insurance">
+    <hr>
+    <h3>Employee State Insurance</h3>
+    <div class="section">
+        <div class="details">
+            {% for esi in page.esi %}
+                <div class="details-item">
+                    <i class="fa-regular fa-circle-check"></i>
+                    <span>{{ esi }}</span>
+                </div>
+            {% endfor %}
+        </div>
+        <img src="./img/Employees.jpg" >
         
     </div>
     
-
-<div class="Provident">
-    <hr>
-    <h3>Employee Provident Fund</h3>
-    {% for epf in page.epf %}
-			<i class="fa-regular fa-circle-check"></i> {{ epf }}<br><br>
-		{% endfor %}     
-    <img src="./img/empfund.jpg" width="380" height="170">
-    <button>EMP Provident Fund</button>
-
+    <div class="Provident">
+        <hr>
+        <h3>Employee Provident Fund</h3>
+        <div class="section">
+            <div class="details">
+                {% for epf in page.epf %}
+                    <div class="details-item">
+                        <i class="fa-regular fa-circle-check"></i> <span>{{ epf }}</span>
+                    </div>
+                {% endfor %}
+            </div>
+            <img src="./img/empfund.jpg" >
+        </div>
+    </div>
 </div>
-

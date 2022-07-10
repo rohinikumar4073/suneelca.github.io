@@ -24,74 +24,63 @@ gst_refund:
 - Claim the refund for the excess tax paid
 - Get the refund your accumulated incom tax credit
 ---
-<!DOCTYPE html>
-<div class="main">
-    <div class="gst">
-        <h4>GST Registration</h4>
-    </div>
-    <div class="process">
-        <h4><u>Process</u></h4>
-        1.Collect documents<br><br>
-        2.Apply Online<br><br>
-        3.Follow up<br><br>
-        4.Certificate download<br><br>
-    </div>
-    <div class="document">
-        <h4><u>Documents Needed</u></h4>
-        1.PAN Card<br><br>
-        2.Aadhar Card<br><br>
-        3.Business Card<br><br>
-    </div>
-    <div class="plans">
-        <b><h4><u>Plans Available</u></h4></b>
-    </div>
-    <div class="maindiv">
-        <div class="card1 card">
-            <div class="front">
-                <h5> Rs.1000 </h5>
-                <ul>
-                    <li>Feature 1</li>
-                    <li>Feature 2</li>
-                    <li>Feature 3</li>
-                    <li>Feature 4</li>
-                </ul>
-                <button>Flip</button>
-            </div>
-            
-            <div class="back">
-                Welcome to our website
-                <button>Back</button>
-            </div>
+<h2> GST</h2>
+<div class="gstcontent">
+    <h3> GST Registration</h3>
+    <div class="section">
+        <div class="details">
+            {% for register_gst in page.register_gst %}
+                <div class="details-item">
+                    <i class="fa-regular fa-circle-check"></i>
+                    <span>{{ register_gst }}</span>
+                </div>
+            {% endfor %}
         </div>
-        <div class="card2 card">
-            <div class="front">
-                <h5> Rs.1000 </h5>
-                <ul>
-                    <li>Feature 1</li>
-                    <li>Feature 2</li>
-                    <li>Feature 3</li>
-                    <li>Feature 4</li>
-                </ul>
-                <button>Flip</button>
-            </div>
-            <div class="back">
-                welcome to our website
-                <button>Back</button>
-            </div>
+        <img src="./img/GSTRegistration-.jpg" >
+    </div>
+</div>
+<div class="gstreturn">
+    <hr>
+    <h2>GST Returns</h2>
+    <div class="section">
+        <div class="details">
+            {% for gst_returns in page.gst_returns %}
+                <div class="details-item">
+                    <i class="fa-regular fa-circle-check"></i>
+                    <span> {{ gst_returns }} </span>
+                </div>
+            {% endfor %}
         </div>
-        <div class="card3 card">
-            <div class="front">
-                <h5> Rs.1000 </h5>
-                <ul>
-                    <li>Feature 1</li>
-                    <li>Feature 2</li>
-                    <li>Feature 3</li>
-                    <li>Feature 4</li>
-                </ul>
-                <button>Flip</button>
-            </div>
-            <div class="back">
-                Welcome to our website
-                <button>Back</button>
-            </div>
+        <img src="./img/gstreturn.jpg" >
+    </div>
+</div>
+<div class="appeals">
+    <hr>
+    <h2>GST Appeals</h2>
+    <div class="section">
+        <div class="details">
+            {% for gst_appeals in page.gst_appeals %}
+                <div class="details-item">
+                    <i class="fa-regular fa-circle-check"></i>
+                    <span>{{ gst_appeals }}</span>
+                </div>
+            {% endfor %}
         </div>
+        <img src="./img/Appeal.jpg" >
+    </div>
+</div>
+<div class="refund">
+    <hr>
+    <h2>GST Refund</h2>
+    <div class="section">
+        <div class="details">
+            {% for gst_refund in page.gst_refund        %}
+                <div class="details-item">
+                    <i class="fa-regular fa-circle-check"></i>
+                    <span>{{ gst_refund }}</span>
+                </div>
+            {% endfor %}
+        </div>
+        <img src="./img/gstrefund.jpg" >
+    </div>
+</div>

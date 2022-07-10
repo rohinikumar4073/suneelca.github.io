@@ -1,20 +1,30 @@
 - - label: Tax Calculators
     link: https://incometaxindia.gov.in/Pages/tax-calculators.aspx
+
   - label: E filling of ITR
     link: https://incometaxindia.gov.in/Pages/tax-services/file-income-tax-return.aspx
+
   - label: Apply for PAN
     link: https://incometaxindia.gov.in/Pages/tax-services/apply-for-pan.aspx
+
   - label: Pay Tax Online
     link: https://incometaxindia.gov.in/Pages/tax-services/pay-tax-online.aspx
+
   - label: Dispute resolution scheme
     link: https://incometaxindia.gov.in/Pages/dispute-resolution-scheme.aspx
+
+
 - - label: Pan Search
     link: https://www.incometax.gov.in/iec/foportal
+
   - label: Currency Converter
     link: https://www.oanda.com/currency-converter/en/?from=EUR&to=USD&amount=1
+
   - label: Challan status enquiry
     link: https://www.incometaxindia.gov.in/Pages/downloads/challans.aspx
+
   - label: Tax Calendar
     link: https://incometaxindia.gov.in/Pages/tax-services/pay-tax-online.aspx
+
   - label: Dispute resolution scheme
     link: http://vmvsr.com/AllEvent.aspx

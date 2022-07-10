@@ -3,7 +3,7 @@
   title: GST
   submenu:
     - nav: gstRegistration
-      link: gst.html
+      link: gstRegistration.html
       title: GST Registration
 
     - nav: gstRefunds
