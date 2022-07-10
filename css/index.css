@@ -141,10 +141,7 @@ a.contact-now {
     height: 700px;
     padding: 20px 10px;
 }
-.footer-box{
-    display: flex;
-    
-}
+
 
 @media (max-width:500px) {
     .content-container{

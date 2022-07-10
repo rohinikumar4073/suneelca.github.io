@@ -122,6 +122,10 @@ header a {
     display: block;
 }
 
+.footer-box{
+    display: flex;
+}
+
 @media (max-width:500px) {
     header {
         display: grid;

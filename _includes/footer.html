@@ -3,23 +3,14 @@
     <p>One Tax Nation © 2022</p>
   </div>
   <div class='footer-box'>
-    
-    <div class='footer-item'>
-      <ul >
-        <li> <a href="https://incometaxindia.gov.in/Pages/tax-calculators.aspx" target="_blank" >Tax Calculators</a></li>
-        <li><a target="_blank"  href="https://incometaxindia.gov.in/Pages/tax-services/file-income-tax-return.aspx" >E filling of ITR</a></li>
-        <li><a target="_blank"  href="https://incometaxindia.gov.in/Pages/tax-services/apply-for-pan.aspx" >Apply for PAN</a></li>
-        <li><a target="_blank"  href="https://incometaxindia.gov.in/Pages/tax-services/pay-tax-online.aspx" >Pay tax online</a></li>
-        <li><a target="_blank"  href="https://incometaxindia.gov.in/Pages/dispute-resolution-scheme.aspx" >Dispute resolution scheme</a></li>
-      </ul>
-    </div>
-    <div class='footer-item'>
-      <ul >
-        <li ><a target="_blank"  href="https://www.incometax.gov.in/iec/foportal" class="nav-link p-0 text-muted">Pan Search</a></li>
-        <li ><a target="_blank"  href="https://www.oanda.com/currency-converter/en/?from=EUR&to=USD&amount=1" class="nav-link p-0 text-muted">Currency Converter</a></li>
-        <li ><a target="_blank"  href="https://www.incometaxindia.gov.in/Pages/downloads/challans.aspx" class="nav-link p-0 text-muted">Challan status enquiry</a></li>
-        <li ><a target="_blank"  href="http://vmvsr.com/AllEvent.aspx" class="nav-link p-0 text-muted">Tax Calendar</a></li>
-      </ul>
-    </div>
+    {% for footer in site.data.footer %}
+      <div class='footer-item'>
+        <ul >
+          {% for footerItem in footer %}
+            <li> <a href="{{ footerItem.link }}" target="_blank" > {{ footerItem.label }}</a></li>
+          {% endfor %}
+        </ul>
+      </div>
+    {% endfor %}
   </div>
 </footer>
