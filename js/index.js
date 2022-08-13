@@ -1,6 +1,6 @@
 $(document).ready(function(){
 $('.menusym i').click(function(){     
-$('.mobilelist').fadeToggle(600);
+$('.navigation-mobile').fadeToggle(600);
  
 });
 });

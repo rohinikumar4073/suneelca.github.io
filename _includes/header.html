@@ -9,15 +9,15 @@
     <div class="email">{{site.data.header.email}}</div>
 </header>
 
-<ul class="allmenus">
+<ul class="navigation-desktop">
     {% for navigation in site.data.navigation %}
-        <li class="allmenu-item">
+        <li class="navigation-desktop-item">
             <a href="/{{ navigation.link }}">
                 {{ navigation.title }}
             </a>
-            <ul class="allmenu-item-submenu">
+            <ul class="navigation-desktop-submenu">
                 {% for submenuItem in navigation.submenu %}
-                    <li class="allmenu-item-submenu-item">
+                    <li class="navigation-desktop-submenu-item">
                         <a href="/{{ submenuItem.link }}">
                             {{ submenuItem.title }}
                         </a>
@@ -29,23 +29,21 @@
 </ul>
 
 
-<div class="mobilelist">
-    <ul>
-        {% for navigation in site.data.navigation %}
-            <li>
-                <a href="/{{ navigation.link }}">
-                    {{ navigation.title }}
-                </a>
-                <ul class="allmenu-item-submenu">
-                {% for submenuItem in navigation.submenu %}
-                    <li class="allmenu-item-submenu-item">
-                        <a href="/{{ submenuItem.link }}">
-                            {{ submenuItem.title }}
-                        </a>
-                    </li>
-                {% endfor %}
-            </ul>
-            </li>
-        {% endfor %}
-    </ul>
-</div>
+<ul class="navigation-mobile">
+    {% for navigation in site.data.navigation %}
+        <li class="navigation-mobile-item">
+            <a href="/{{ navigation.link }}">
+                {{ navigation.title }}
+            </a>
+            <ul class="navigation-mobile-sub-menu" >
+            {% for submenuItem in navigation.submenu %}
+                <li class="navigation-mobile-sub-item" >
+                    <a href="/{{ submenuItem.link }}">
+                        {{ submenuItem.title }}
+                    </a>
+                </li>
+            {% endfor %}
+        </ul>
+        </li>
+    {% endfor %}
+</ul>

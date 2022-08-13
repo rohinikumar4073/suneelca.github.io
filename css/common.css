@@ -1,4 +1,3 @@
-
 body {
     font-family: Arial, Helvetica, sans-serif;
 }
@@ -20,131 +19,89 @@ header a {
 p {
     margin: 0px;
 }
-.allmenus {
+
+.navigation-desktop {
     position: relative;
     margin: 20px;
     font-size: 22px;
-}
-.allmenus  {
     list-style: none;
     display: flex;
     justify-content: space-around;
 }
-.allmenu-item-submenu {
+
+.navigation-desktop .navigation-desktop-item > a {
+    text-decoration: none;
+    color: white;
+}
+.navigation-desktop-item .navigation-desktop-submenu {
+    display: none;
     position: absolute;
     background: white;
     color: black;
     list-style: none;
     padding: 0px;
     margin: 0px;
-} 
+    z-index: 1;
+    font-size: 16px;
 
-.allmenu-item .allmenu-item-submenu{
-    display: none;
 }
-.allmenu-item:hover  .allmenu-item-submenu{
+
+.navigation-desktop-item .navigation-desktop-submenu a {
+        text-decoration: none;
+}
+.navigation-desktop-item:hover  .navigation-desktop-submenu {
     display: block;
-    z-index: 1;
 }
-.mobilelist {
+
+
+.navigation-desktop a:hover {
+    background: white;
+    color: blue;
+}
+
+.navigation-desktop-submenu a {
+    padding: 5px;
+    display: block;
+}
+
+.footer-box {
+    display: flex;
+}
+
+.home-page {
+    height: 100%;
+}
+
+.navigation-mobile {
     display: none;
-    position: absolute;
-    z-index: 1;
 }
 
 .menusym {
     display: none;
 }
 
-.menu1 {
-    position: absolute;
-    top: 8%;
-    padding: 10px;
-    left: 9%;
-}
-
-.menu2 {
-    position: absolute;
-    top: 8%;
-    padding: 10px;
-    left: 16%;
-}
-
-.menu3 {
-    position: absolute;
-    top: 8%;
-    padding: 10px;
-    left: 29%;
-}
-
-.menu4 {
-    position: absolute;
-    top: 8%;
-    padding: 10px;
-    left: 40%;
-}
-
-.menu5 {
-    position: absolute;
-    top: 8%;
-    padding: 10px;
-    left: 49%;
-}
-
-.menu6 {
-    position: absolute;
-    top: 8%;
-    padding: 10px;
-    left: 63%;
-}
-
-.menu7 {
-    position: absolute;
-    top: 8%;
-    padding: 10px;
-    left: 82%;
-}
-
-.allmenus a {
-    text-decoration: none;
-    color: white;
-}
-
-.allmenus a:hover {
-    background: white;
-    color: blue;
-}
-.allmenu-item-submenu a {
-    color: black;
-    font-size: 16px;
-    padding: 5px;
-    display: block;
-}
-
-.footer-box{
-    display: flex;
-}
-
-.box {
-    height: 100%;
-}
-footer{
+footer {
     background: #999;
     padding: 10px;
 }
+
 .container {
     padding: 10px 10%;
 }
+
 .section {
     display: grid;
     grid-template-columns: 50% 50%;
 }
-.section img{
-        width: 420px;
-    }
+
+.section img {
+    width: 420px;
+}
+
 .section .details-item {
     padding: 5px;
 }
+
 @media (max-width:500px) {
     header {
         display: grid;
@@ -156,12 +113,15 @@ footer{
         color: rgb(212, 205, 205, 0.7);
         text-align: center;
     }
-     .mobilelist .allmenu-item-submenu {
-        position: relative;
-     }
-    .mobilelist .allmenu-item-submenu li {
+
+    .navigation-mobile{
+        position: absolute;
+        z-index: 1;
+    }
+    .navigation-mobile .navigation-mobile-sub-menu li {
         padding: 2px;
     }
+
     .mobile {
         font-size: 16px;
         grid-column: 1/3;
@@ -172,16 +132,17 @@ footer{
         display: none;
     }
 
-    .allmenus {
+    .navigation-desktop {
         display: none;
     }
 
-    .mobilelist {
-        display: none;
-    }
-
-    .mobilelist li {
+     li {
         display: block;
+    }
+
+     ul {
+        margin: 0px;
+        padding: 0px;
     }
 
     .menusym {
@@ -200,12 +161,7 @@ footer{
         color: rgb(51, 13, 221);
     }
 
-    .mobilelist {
-        display: none;
-    }
-
-
-    .mobilelist ul li {
+    .navigation-mobile li {
         position: relative;
         list-style-type: none;
         background-color: rgb(198, 221, 196);
@@ -218,13 +174,7 @@ footer{
         border-radius: 10px;
     }
 
-    .mobilelist .allmenu-item-submenu{
-
-    }
-    ul li {
-        font-display: block;
-    }
-
+  
     ul a {
         text-decoration: none;
         color: black;
@@ -233,10 +183,12 @@ footer{
     ul li a:hover {
         color: fuchsia;
     }
+
     .section {
-        grid-template-columns:100%;
+        grid-template-columns: 100%;
     }
-    .section img{
+
+    .section img {
         width: 100%;
     }
 
