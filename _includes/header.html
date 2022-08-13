@@ -36,6 +36,15 @@
                 <a href="/{{ navigation.link }}">
                     {{ navigation.title }}
                 </a>
+                <ul class="allmenu-item-submenu">
+                {% for submenuItem in navigation.submenu %}
+                    <li class="allmenu-item-submenu-item">
+                        <a href="/{{ submenuItem.link }}">
+                            {{ submenuItem.title }}
+                        </a>
+                    </li>
+                {% endfor %}
+            </ul>
             </li>
         {% endfor %}
     </ul>
